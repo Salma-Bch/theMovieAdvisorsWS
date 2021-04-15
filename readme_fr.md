@@ -14,16 +14,15 @@ Nous avons utilisé l'API de Spotify afin de récupérer les informations nécé
 ### :black_medium_small_square: Données
 Nous avons crée 2 classes de données :
  * **_Artist_**
- 
- Un artiste possède un id, un nom et une nationalité.
+   * Un artiste possède un id, un nom et une nationalité.
+   
  * **_Event_**
-
-Une évènement possède un id, un nom, une date et une région.
+   * Une évènement possède un id, un nom, une date et une région.
 
 ## :black_medium_square: Autres
 Deux versions de ce fichier ont été réalisées :
-* version française (readme_fr.md)
-* version anglaise (readme_en.md)
+* Version française (readme_fr.md)
+* Version anglaise (readme_en.md)
 
 De plus, ce fichier est plus lisible sur la plateforme GitHub :
   * Lien vers le référentiel du projet WS : https://github.com/Salma-Bch/theMovieAdvisorsWS.git
