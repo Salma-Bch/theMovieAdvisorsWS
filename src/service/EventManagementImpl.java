@@ -1,14 +1,10 @@
 package service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
-
-import model.Artist;
 import model.Event;
 
 public class EventManagementImpl implements EventManagement{
@@ -18,17 +14,18 @@ public class EventManagementImpl implements EventManagement{
 	public EventManagementImpl() {
 		eventsMap = new HashMap<Integer, Event>();
 	}
-
+	
 	public int addEvent(Event event) {
-		int id = -1;
-		/*int eventId = event.getId();
+		int id = 1;
+		int eventId = event.getId();
 		if(eventId >= 0 && !eventsMap.containsKey(eventId)) {
 			eventsMap.put(eventId, event);
 			id = eventId;
-		}*/
+		}
 		return id;
 	}
 
+	/*
 	public boolean deleteEvent(int id) {
 		boolean removed = false ;
 		if(eventsMap.containsKey(id)) {
@@ -36,10 +33,6 @@ public class EventManagementImpl implements EventManagement{
 			removed = eventsMap.remove(id, event);
 		}
 		return removed;
-	}
-
-	public Event getEvent(int id) {
-		return eventsMap.get(id);
 	}
 
 	public Event[] getEventsByArea(String area) {
@@ -63,5 +56,5 @@ public class EventManagementImpl implements EventManagement{
 	public Event[] getAllEvents() {
 		return (Event[])eventsMap.values().toArray();
 	}
-
+	*/
 }

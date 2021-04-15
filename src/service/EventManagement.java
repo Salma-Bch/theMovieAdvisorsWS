@@ -11,13 +11,10 @@ public interface EventManagement {
 	@WebResult(name = "id")
 	public int addEvent(@WebParam(name = "event") Event event);
 	
+	/*
 	@WebMethod(operationName = "deleteEvent", action = "urn:DeleteEvent")
 	@WebResult(name = "deleted")
 	public boolean deleteEvent(@WebParam(name = "id") int id);
-	
-	@WebMethod(operationName = "getEvent", action = "urn:GetEvent")
-	@WebResult(name = "event")
-	public Event getEvent(@WebParam(name = "id") int id);
 	
 	@WebMethod(operationName = "getEventsByArea", action = "urn:GetEventsByArea")
 	@WebResult(name = "event")
@@ -30,5 +27,6 @@ public interface EventManagement {
 	@WebMethod(operationName = "getAllEvents", action = "urn:GetAllEvents")
 	@WebResult(name = "events")
 	public Event[] getAllEvents();
+	*/
 
 }

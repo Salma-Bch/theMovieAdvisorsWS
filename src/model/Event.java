@@ -7,13 +7,13 @@ public class Event {
 	private String area;
 	private Artist artist;
 	
-	public Event(int id, String name, String date, String area) {
+	public Event(int id, String name, String date, String area, Artist artist) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.date = date;
 		this.area = area;
-		//this.artist = artist;
+		this.artist = artist;
 	}
 	
 	public int getId() {
