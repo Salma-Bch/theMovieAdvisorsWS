@@ -33,6 +33,12 @@ La description du client est disponible dans ce référentiel :
  
     EventManagementImpl est la classe d'implémenation du service d'un évènement. Elle regroupe l'implémentation de toutes les méthodes permettant de manipuler un évènement.
     
+     Celle-ci contient les méthodes permettant :
+    * D'ajouter un évènement.
+    * De récupérer un évènement à partir d'une région
+    * De récupérer un évènement à partir d'un artiste.
+    * De récupérer tout les évènements.
+    
 ## :black_medium_square: Autres
 Voici les liens vers les autres référentiels sur la plateforme GitHub :
   * Lien vers le référentiel du projet WS : https://github.com/Salma-Bch/theMovieAdvisorsWS.git
