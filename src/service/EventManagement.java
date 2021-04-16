@@ -29,7 +29,7 @@ public interface EventManagement {
 	 * Méthode permettant de supprimer un évènement.
 	 *  
 	 * @param id
-	 * @return Retourne "true" si l'évènement a été rajouter ou "false" en cas d'erreur.
+	 * @return Retourne "true" si l'évènement a été supprimer ou "false" en cas d'erreur.
 	 *
 	 */
 	/*
