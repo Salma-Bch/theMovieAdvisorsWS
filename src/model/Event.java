@@ -1,5 +1,11 @@
 package model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * 
  * Event est la classe de donnée d'un évènement.
@@ -8,11 +14,18 @@ package model;
  * @version 1.0
  *
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Event")
 public class Event {
+	@XmlElement(name = "id")
 	private int id;
+	@XmlElement(name = "name")
 	private String name;
+	@XmlElement(name = "date")
 	private String date;
+	@XmlElement(name = "area")
 	private String area;
+	@XmlElement(name = "artist")
 	private Artist artist;
 	
 	/**
@@ -33,6 +46,8 @@ public class Event {
 		this.area = area;
 		this.artist = artist;
 	}
+	
+	public Event() {}
 	
 	/**
 	 * Méthode permettant de récupérer l'id de l'évènement.

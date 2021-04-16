@@ -32,8 +32,7 @@ public interface EventManagement {
 	 * @return Retourne "true" si l'évènement a été supprimer ou "false" en cas d'erreur.
 	 *
 	 */
-	/*
-	@WebMethod(operationName = "deleteEvent", action = "urn:DeleteEvent")
+	/*@WebMethod(operationName = "deleteEvent", action = "urn:DeleteEvent")
 	@WebResult(name = "deleted")
 	public boolean deleteEvent(@WebParam(name = "id") int id);
 	*/
@@ -45,11 +44,10 @@ public interface EventManagement {
 	 * @return Retourne un tableau d'évènement.
 	 *
 	 */
-	/*
 	@WebMethod(operationName = "getEventsByArea", action = "urn:GetEventsByArea")
 	@WebResult(name = "event")
 	public Event[] getEventsByArea(@WebParam(name = "area") String area);
-	*/
+	
 	
 	/**
 	 * Méthode permettant de récupérer les évènements à partir d'un artiste.
@@ -58,11 +56,10 @@ public interface EventManagement {
 	 * @return Retourne un tableau d'évènement.
 	 *
 	 */
-	/*
 	@WebMethod(operationName = "getEventsByArtist", action = "urn:GetEventsByArtist")
 	@WebResult(name = "event")
 	public Event[] getEventsByArtist(@WebParam(name = "artist") Artist artist);
-	*/
+	
 	
 	/**
 	 * Méthode permettant de récupérer tout les évènements.
@@ -70,10 +67,8 @@ public interface EventManagement {
 	 * @return Retourne un tableau d'évènement.
 	 *
 	 */
-	/*
 	@WebMethod(operationName = "getAllEvents", action = "urn:GetAllEvents")
 	@WebResult(name = "events")
 	public Event[] getAllEvents();
-	*/
 
 }

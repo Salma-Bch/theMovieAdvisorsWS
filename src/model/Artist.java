@@ -1,5 +1,11 @@
 package model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Artist est la classe de donnée d'un artiste.
  * 
@@ -7,9 +13,14 @@ package model;
  * @version 1.0
  *
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Artist")
 public class Artist {
+	@XmlElement(name = "id")
 	private int id;
+	@XmlElement(name = "name")
 	private String name;
+	@XmlElement(name = "nationality")
 	private String nationality;
 	
 	/**
@@ -26,6 +37,8 @@ public class Artist {
 		this.name = name;
 		this.nationality = nationality;
 	}
+	
+	public Artist() {}
 	
 	/**
 	 * Méthode permettant de récupérer l'id de l'artiste.

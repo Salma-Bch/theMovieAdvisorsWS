@@ -13,21 +13,21 @@ import javax.xml.bind.annotation.XmlType;
  * Generated source version: 2.7.18
  */
 
-@XmlRootElement(name = "addEventResponse", namespace = "http://service/")
+@XmlRootElement(name = "getAllEventsResponse", namespace = "http://service/")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "addEventResponse", namespace = "http://service/")
+@XmlType(name = "getAllEventsResponse", namespace = "http://service/")
 
-public class AddEventResponse {
+public class GetAllEventsResponse {
 
-    @XmlElement(name = "id")
-    private int id;
+    @XmlElement(name = "events")
+    private model.Event[] events;
 
-    public int getId() {
-        return this.id;
+    public model.Event[] getEvents() {
+        return this.events;
     }
 
-    public void setId(int newId)  {
-        this.id = newId;
+    public void setEvents(model.Event[] newEvents)  {
+        this.events = newEvents;
     }
 
 }
